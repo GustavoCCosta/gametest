@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mak {
+    border: 2px solid red;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-auto-rows: auto;
+    gap: 20px;
+    margin: 50px;
+    padding: 25px;
+    height: 80vh;
+}
+
+.lateralColumn {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 0px auto;
+    height: 100%;
+    padding: 1rem;
+    border: 2px solid gray;
+}
+
+.lateralColumn .lateralBallon {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+
+.lateralColumn .btnsQtd {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    gap: 5px;
+    width: 100%;
+}
+
+.lateralColumn .modQtd {
+    text-align: center;
+    font-size: 0.7rem;
+    height: 25px;
+}
+
+.lateralColumn .lateralTime {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/cronometro.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    font-size: 3rem;
+
+}
+
+.lateralColumn .lateralPlay {
+    background-color: transparent;
+    margin: 10px;;
+}
+
+.lateralColumn .btnPlay {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-image: url('../img/iniciar.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.lateralColumn .btnPlay:active {
+    animation: scale 0.1s ease forwards;
+}
+
+@keyframes scale {
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: rgba(0, 255, 0, 0.3);
+    }
+}
+
+.lateralColumn .btnCancel {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-image: url('../img/cancelar.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+.gameView{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: auto;
+    height: 100%;
+    background-image: url('../img/cenario.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 1rem;
+}
+
+.gameView .ballon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}

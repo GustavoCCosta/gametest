@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <script src='scripts/main.js'></script>
+    <title>Estoura Game</title>
+</head>
+<body>
+    <section class="col">
+        <div class="lateralColumn"><!--Lateral Column-->
+            <div class="lateralBallon"><!--Lateral Ballon Total-->
+                <img src="img/balao_azul_grande.png"/>
+                <span id="ballonsQtd" class="">0</span>
+                <div class="btnsQtd">
+                    <button id="btnAumentarballonsQtd" class="modQtd">Aumentar</button>
+                    <button id="btnDiminuirballonsQtd" class="modQtd">Diminuir</button>
+                </div>
+            </div>
+            <div class="lateralBallon"><!--Lateral Ballon Pow-->
+                <img src="img/balao_azul_grande_estourado.png"/>
+                <span id="ballonsPowQtd" class="">0</span>
+
+            </div>
+            <div class="lateralTime"><!--Lateral Time-->
+                <div id="timeQtd" class="crono">1</div>
+            </div>
+            <div class="btnsQtd">
+                <button id="btnAumentartimeQtd" class="modQtd">Aumentar</button>
+                <button id="btnDiminuirtimeQtd" class="modQtd">Diminuir</button>
+            </div>
+            <div id="lateralPlay" class="lateralPlay"><!--Play-->
+                <button id="btnPlay" class="btnPlay"></button>
+            </div>
+        </div>
+        <div id="gridMainView" class="gameView"><!--Main View Game-->
+            <!--<div class="ballon">
+                    <img id="" src="..." />
+                </div>-->
+        </div>
+    </section>
+    <script>handleSetup()</script>
+</body>
+</html>
